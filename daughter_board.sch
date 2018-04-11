@@ -198,6 +198,49 @@ F 3 "" H 5050 3200 50  0001 C CNN
 	1    5050 3200
 	1    0    0    -1  
 $EndComp
+Text GLabel 3600 5500 2    60   BiDi ~ 0
+TWI_SCL
+Text GLabel 2500 5500 0    60   BiDi ~ 0
+TWI_SDA
+Text GLabel 5750 6550 2    60   BiDi ~ 0
+TWI_SCL
+Text GLabel 4750 6550 0    60   BiDi ~ 0
+TWI_SDA
+Text Notes 5550 4250 0    60   ~ 0
+twi address is 0x76 because csb is low \n(would be 0x77 if csb was high)
+$Comp
+L ultimate_gps_header_1x9 J?
+U 1 1 5ACD85F9
+P 9350 3700
+F 0 "J?" H 9350 4200 50  0000 C CNN
+F 1 "ultimate_gps_header_1x9" V 9500 3700 50  0000 C CNN
+F 2 "" H 9350 3700 50  0001 C CNN
+F 3 "" H 9350 3700 50  0001 C CNN
+	1    9350 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L +3.3V #PWR?
+U 1 1 5ACD88ED
+P 8900 3100
+F 0 "#PWR?" H 8900 2950 50  0001 C CNN
+F 1 "+3.3V" H 8900 3240 50  0000 C CNN
+F 2 "" H 8900 3100 50  0001 C CNN
+F 3 "" H 8900 3100 50  0001 C CNN
+	1    8900 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 5ACD8A23
+P 8900 4300
+F 0 "#PWR?" H 8900 4050 50  0001 C CNN
+F 1 "GND" H 8900 4150 50  0000 C CNN
+F 2 "" H 8900 4300 50  0001 C CNN
+F 3 "" H 8900 4300 50  0001 C CNN
+	1    8900 4300
+	1    0    0    -1  
+$EndComp
 Wire Wire Line
 	2300 3800 2750 3800
 Wire Wire Line
@@ -249,22 +292,20 @@ Wire Wire Line
 Connection ~ 5050 4000
 Connection ~ 5050 3550
 Connection ~ 5550 3550
-Text GLabel 3600 5500 2    60   BiDi ~ 0
-TWI_SCL
-Text GLabel 2500 5500 0    60   BiDi ~ 0
-TWI_SDA
 Wire Wire Line
 	2800 5500 2500 5500
-Text GLabel 5750 6550 2    60   BiDi ~ 0
-TWI_SCL
-Text GLabel 4750 6550 0    60   BiDi ~ 0
-TWI_SDA
 Wire Wire Line
 	5750 6550 5500 6550
 Wire Wire Line
 	5000 6550 4750 6550
-Text Notes 5550 4250 0    60   ~ 0
-twi address is 0x76 because csb is low \n(would be 0x77 if csb was high)
 Wire Wire Line
 	3300 5500 3600 5500
+Wire Wire Line
+	9150 3400 8900 3400
+Wire Wire Line
+	8900 3400 8900 3100
+Wire Wire Line
+	9150 3500 8900 3500
+Wire Wire Line
+	8900 3500 8900 4300
 $EndSCHEMATC
