@@ -1,4 +1,4 @@
-update=3/22/2018 5:41:25 PM
+update=4/12/2018 6:55:09 PM
 version=1
 last_client=kicad
 [pcbnew]
@@ -62,3 +62,4 @@ LibName30=atmel
 LibName31=contrib
 LibName32=valves
 LibName33=jdk_lib
+LibName34=wireless_kicad
