@@ -59,17 +59,6 @@ F 3 "" H 2650 2300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Xplained_Pro_Extension_Header_2x10 J2
-U 1 1 5AB44C00
-P 2600 4600
-F 0 "J2" H 2650 5100 50  0000 C CNN
-F 1 "Xplained_Pro_Extension_Header_2x10" H 2650 4000 50  0000 C CNN
-F 2 "Socket_Strips:Socket_Strip_Angled_2x10_Pitch2.54mm" H 2600 4600 50  0001 C CNN
-F 3 "" H 2600 4600 50  0001 C CNN
-	1    2600 4600
-	1    0    0    -1  
-$EndComp
-$Comp
 L Xplained_Pro_Extension_Header_2x10 J3
 U 1 1 5AB44C6C
 P 2450 6950
@@ -94,12 +83,12 @@ $EndComp
 $Comp
 L GND #PWR02
 U 1 1 5AC6DDAF
-P 1800 5100
-F 0 "#PWR02" H 1800 4850 50  0001 C CNN
-F 1 "GND" H 1800 4950 50  0000 C CNN
-F 2 "" H 1800 5100 50  0001 C CNN
-F 3 "" H 1800 5100 50  0001 C CNN
-	1    1800 5100
+P 2250 5100
+F 0 "#PWR02" H 2250 4850 50  0001 C CNN
+F 1 "GND" H 2250 4950 50  0000 C CNN
+F 2 "" H 2250 5100 50  0001 C CNN
+F 3 "" H 2250 5100 50  0001 C CNN
+	1    2250 5100
 	0    1    1    0   
 $EndComp
 $Comp
@@ -245,28 +234,155 @@ Text GLabel 1850 7050 0    50   BiDi ~ 0
 TWI_SDA
 Text GLabel 2100 2400 0    50   BiDi ~ 0
 TWI_SDA
+$Comp
+L +3.3V #PWR011
+U 1 1 5ACDBE50
+P 3250 2800
+F 0 "#PWR011" H 3250 2650 50  0001 C CNN
+F 1 "+3.3V" H 3250 2940 50  0000 C CNN
+F 2 "" H 3250 2800 50  0001 C CNN
+F 3 "" H 3250 2800 50  0001 C CNN
+	1    3250 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L +3.3V #PWR012
+U 1 1 5ACDBEF9
+P 3150 4150
+F 0 "#PWR012" H 3150 4000 50  0001 C CNN
+F 1 "+3.3V" H 3150 4290 50  0000 C CNN
+F 2 "" H 3150 4150 50  0001 C CNN
+F 3 "" H 3150 4150 50  0001 C CNN
+	1    3150 4150
+	1    0    0    -1  
+$EndComp
+$Comp
+L +3.3V #PWR013
+U 1 1 5ACDBF7F
+P 3100 7450
+F 0 "#PWR013" H 3100 7300 50  0001 C CNN
+F 1 "+3.3V" H 3100 7590 50  0000 C CNN
+F 2 "" H 3100 7450 50  0001 C CNN
+F 3 "" H 3100 7450 50  0001 C CNN
+	1    3100 7450
+	1    0    0    -1  
+$EndComp
+Text GLabel 4250 2800 0    50   BiDi ~ 0
+GPS_RX
+Text GLabel 4250 2900 0    50   BiDi ~ 0
+GPS_TX
+Text Label 2150 2100 0    50   ~ 0
+PB06
+Text Label 3000 2100 0    50   ~ 0
+PB07
+Text Label 3000 2300 0    50   ~ 0
+PA02
+Text Label 2150 2400 0    50   ~ 0
+PA08
+Text Label 3000 2400 0    50   ~ 0
+PA09
+Text Label 3000 2500 0    50   ~ 0
+PB08
+Text Label 2150 2500 0    50   ~ 0
+PB09
+$Comp
+L OpenLog_01x06 J4
+U 1 1 5ACDDEA5
+P 4550 4300
+F 0 "J4" H 4550 4600 50  0000 C CNN
+F 1 "OpenLog_01x06" V 4650 4250 50  0000 C CNN
+F 2 "Socket_Strips:Socket_Strip_Straight_1x06_Pitch2.54mm" H 4550 4300 50  0001 C CNN
+F 3 "" H 4550 4300 50  0001 C CNN
+	1    4550 4300
+	1    0    0    -1  
+$EndComp
+Text GLabel 4100 4300 0    50   BiDi ~ 0
+openlog_TX
+Text GLabel 4100 4200 0    50   BiDi ~ 0
+openlog_RX
+Text GLabel 3250 4800 2    50   BiDi ~ 0
+openlog_RX
+Text GLabel 2050 4800 0    50   BiDi ~ 0
+openlog_TX
+Text Label 2950 4700 0    50   ~ 0
+PA09
+Text Label 2100 4700 0    50   ~ 0
+PA08
+Text Label 2100 4800 0    50   ~ 0
+PA19
+Text Label 2950 4800 0    50   ~ 0
+PA18
+$Comp
+L +3.3V #PWR014
+U 1 1 5ACE0631
+P 4250 4000
+F 0 "#PWR014" H 4250 3850 50  0001 C CNN
+F 1 "+3.3V" H 4250 4140 50  0000 C CNN
+F 2 "" H 4250 4000 50  0001 C CNN
+F 3 "" H 4250 4000 50  0001 C CNN
+	1    4250 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR015
+U 1 1 5ACE06D5
+P 4250 4700
+F 0 "#PWR015" H 4250 4450 50  0001 C CNN
+F 1 "GND" H 4250 4550 50  0000 C CNN
+F 2 "" H 4250 4700 50  0001 C CNN
+F 3 "" H 4250 4700 50  0001 C CNN
+	1    4250 4700
+	1    0    0    -1  
+$EndComp
+$Comp
+L XBee_Header U?
+U 1 1 5ACFF2DE
+P 5500 6000
+F 0 "U?" H 4900 5250 60  0000 C CNN
+F 1 "XBee_Header" H 5500 6750 60  0000 C CNN
+F 2 "" H 5250 6000 60  0000 C CNN
+F 3 "" H 5250 6000 60  0000 C CNN
+	1    5500 6000
+	1    0    0    -1  
+$EndComp
+$Comp
+L +3.3V #PWR?
+U 1 1 5AD00A19
+P 4600 5250
+F 0 "#PWR?" H 4600 5100 50  0001 C CNN
+F 1 "+3.3V" H 4600 5390 50  0000 C CNN
+F 2 "" H 4600 5250 50  0001 C CNN
+F 3 "" H 4600 5250 50  0001 C CNN
+	1    4600 5250
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 5AD00AE8
+P 4600 6700
+F 0 "#PWR?" H 4600 6450 50  0001 C CNN
+F 1 "GND" H 4600 6550 50  0000 C CNN
+F 2 "" H 4600 6700 50  0001 C CNN
+F 3 "" H 4600 6700 50  0001 C CNN
+	1    4600 6700
+	1    0    0    -1  
+$EndComp
 Wire Wire Line
 	1950 2800 2400 2800
 Wire Wire Line
 	3300 1900 2900 1900
 Wire Wire Line
-	3200 4200 2850 4200
-Wire Wire Line
-	1800 5100 2350 5100
+	2250 5100 2350 5100
 Wire Wire Line
 	1750 7450 2200 7450
 Wire Wire Line
 	2700 6550 2850 6550
 Wire Wire Line
-	5700 1150 5900 1150
-Wire Wire Line
-	5900 1150 6050 1150
+	5700 1150 6050 1150
 Wire Wire Line
 	6050 950  5900 950 
 Wire Wire Line
-	5900 750  5900 950 
-Wire Wire Line
-	5900 950  5900 1150
+	5900 750  5900 1150
 Wire Wire Line
 	5900 750  7350 750 
 Wire Wire Line
@@ -276,9 +392,7 @@ Wire Wire Line
 Connection ~ 5900 1150
 Connection ~ 5900 950 
 Wire Wire Line
-	5400 1350 5900 1350
-Wire Wire Line
-	5900 1350 6050 1350
+	5400 1350 6050 1350
 Wire Wire Line
 	5900 1350 5900 1550
 Wire Wire Line
@@ -290,13 +404,9 @@ Wire Wire Line
 Wire Wire Line
 	7250 1350 7600 1350
 Wire Wire Line
-	5400 1000 5400 1350
+	5400 1000 5400 1400
 Wire Wire Line
-	5400 1350 5400 1400
-Wire Wire Line
-	5400 1700 5400 1800
-Wire Wire Line
-	5400 1800 5400 2000
+	5400 1700 5400 2000
 Wire Wire Line
 	5400 1800 5700 1800
 Wire Wire Line
@@ -336,51 +446,12 @@ Wire Wire Line
 	3650 3000 3650 2300
 Wire Wire Line
 	3650 2300 2900 2300
-$Comp
-L +3.3V #PWR011
-U 1 1 5ACDBE50
-P 3250 2800
-F 0 "#PWR011" H 3250 2650 50  0001 C CNN
-F 1 "+3.3V" H 3250 2940 50  0000 C CNN
-F 2 "" H 3250 2800 50  0001 C CNN
-F 3 "" H 3250 2800 50  0001 C CNN
-	1    3250 2800
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	3250 2800 2900 2800
-$Comp
-L +3.3V #PWR012
-U 1 1 5ACDBEF9
-P 3150 5100
-F 0 "#PWR012" H 3150 4950 50  0001 C CNN
-F 1 "+3.3V" H 3150 5240 50  0000 C CNN
-F 2 "" H 3150 5100 50  0001 C CNN
-F 3 "" H 3150 5100 50  0001 C CNN
-	1    3150 5100
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3150 5100 2850 5100
-$Comp
-L +3.3V #PWR013
-U 1 1 5ACDBF7F
-P 3100 7450
-F 0 "#PWR013" H 3100 7300 50  0001 C CNN
-F 1 "+3.3V" H 3100 7590 50  0000 C CNN
-F 2 "" H 3100 7450 50  0001 C CNN
-F 3 "" H 3100 7450 50  0001 C CNN
-	1    3100 7450
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	3100 7450 2700 7450
-Text GLabel 4250 2800 0    50   BiDi ~ 0
-GPS_RX
 Wire Wire Line
 	4250 2800 4650 2800
-Text GLabel 4250 2900 0    50   BiDi ~ 0
-GPS_TX
 Wire Wire Line
 	4250 2900 4650 2900
 Wire Wire Line
@@ -389,94 +460,77 @@ Wire Wire Line
 	4400 2600 4400 2300
 Wire Wire Line
 	4500 2700 4650 2700
-Text Label 2150 2100 0    50   ~ 0
-PB06
-Text Label 3000 2100 0    50   ~ 0
-PB07
-Text Label 3000 2300 0    50   ~ 0
-PA02
-Text Label 2150 2400 0    50   ~ 0
-PA08
-Text Label 3000 2400 0    50   ~ 0
-PA09
-Text Label 3000 2500 0    50   ~ 0
-PB08
-Text Label 2150 2500 0    50   ~ 0
-PB09
-$Comp
-L OpenLog_01x06 J4
-U 1 1 5ACDDEA5
-P 4550 4300
-F 0 "J4" H 4550 4600 50  0000 C CNN
-F 1 "OpenLog_01x06" V 4650 4250 50  0000 C CNN
-F 2 "Socket_Strips:Socket_Strip_Straight_1x06_Pitch2.54mm" H 4550 4300 50  0001 C CNN
-F 3 "" H 4550 4300 50  0001 C CNN
-	1    4550 4300
-	1    0    0    -1  
-$EndComp
-Text GLabel 4100 4300 0    50   BiDi ~ 0
-openlog_TX
 Wire Wire Line
 	4100 4300 4350 4300
-Text GLabel 4100 4200 0    50   BiDi ~ 0
-openlog_RX
 Wire Wire Line
 	4100 4200 4350 4200
-Text GLabel 3250 4800 2    50   BiDi ~ 0
-openlog_RX
 Wire Wire Line
 	3250 4800 2850 4800
-Text GLabel 2050 4800 0    50   BiDi ~ 0
-openlog_TX
 Wire Wire Line
 	2050 4800 2350 4800
-Text Label 2950 4700 0    50   ~ 0
-PA09
-Text Label 2100 4700 0    50   ~ 0
-PA08
-Text Label 2100 4800 0    50   ~ 0
-PA19
-Text Label 2950 4800 0    50   ~ 0
-PA18
-$Comp
-L +3.3V #PWR014
-U 1 1 5ACE0631
-P 4250 4000
-F 0 "#PWR014" H 4250 3850 50  0001 C CNN
-F 1 "+3.3V" H 4250 4140 50  0000 C CNN
-F 2 "" H 4250 4000 50  0001 C CNN
-F 3 "" H 4250 4000 50  0001 C CNN
-	1    4250 4000
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	4250 4000 4250 4400
 Wire Wire Line
 	4250 4400 4350 4400
-$Comp
-L GND #PWR015
-U 1 1 5ACE06D5
-P 4250 4700
-F 0 "#PWR015" H 4250 4450 50  0001 C CNN
-F 1 "GND" H 4250 4550 50  0000 C CNN
-F 2 "" H 4250 4700 50  0001 C CNN
-F 3 "" H 4250 4700 50  0001 C CNN
-	1    4250 4700
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	4350 4500 4250 4500
 Wire Wire Line
 	4250 4500 4250 4700
+Wire Wire Line
+	4600 5250 4600 5400
+Wire Wire Line
+	4600 5400 4650 5400
+Wire Wire Line
+	4650 6600 4600 6600
+Wire Wire Line
+	4600 6600 4600 6700
+Wire Wire Line
+	6350 5400 6550 5400
+Wire Wire Line
+	6350 5900 6550 5900
+Wire Wire Line
+	6350 5800 6550 5800
+Text GLabel 2050 5000 0    50   BiDi ~ 0
+SPI5_MISO
+Wire Wire Line
+	2050 5000 2350 5000
+Text GLabel 3250 4900 2    50   BiDi ~ 0
+SPI5_MOSI
+Wire Wire Line
+	3250 4900 2850 4900
 $Comp
-L XBee_Header U?
-U 1 1 5ACFF2DE
-P 5550 5750
-F 0 "U?" H 4950 5000 60  0000 C CNN
-F 1 "XBee_Header" H 5550 6500 60  0000 C CNN
-F 2 "" H 5300 5750 60  0000 C CNN
-F 3 "" H 5300 5750 60  0000 C CNN
-	1    5550 5750
+L Xplained_Pro_Extension_Header_2x10 J2
+U 1 1 5AB44C00
+P 2600 4600
+F 0 "J2" H 2650 5100 50  0000 C CNN
+F 1 "Xplained_Pro_Extension_Header_2x10" H 2650 4000 50  0000 C CNN
+F 2 "Socket_Strips:Socket_Strip_Angled_2x10_Pitch2.54mm" H 2600 4600 50  0001 C CNN
+F 3 "" H 2600 4600 50  0001 C CNN
+	1    2600 4600
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	3200 4200 2850 4200
+Wire Wire Line
+	3150 4150 3150 5100
+Wire Wire Line
+	3150 5100 2850 5100
+Text GLabel 3250 5000 2    50   BiDi ~ 0
+SPI5_SCK
+Wire Wire Line
+	3250 5000 2850 5000
+Text GLabel 2050 4900 0    50   BiDi ~ 0
+SPI5_SS_A
+Wire Wire Line
+	2050 4900 2350 4900
+Text GLabel 6550 5400 2    50   BiDi ~ 0
+SPI5_MISO
+Text GLabel 6550 5900 2    50   BiDi ~ 0
+SPI5_MOSI
+Text GLabel 6550 5700 2    50   BiDi ~ 0
+SPI5_SCK
+Wire Wire Line
+	6350 5700 6550 5700
+Text GLabel 6550 5800 2    50   BiDi ~ 0
+SPI5_SS_A
 $EndSCHEMATC
