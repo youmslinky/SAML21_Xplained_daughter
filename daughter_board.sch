@@ -435,6 +435,19 @@ F 3 "" H 4000 5850 50  0001 C CNN
 	1    4000 5850
 	1    0    0    -1  
 $EndComp
+$Comp
+L C C2
+U 1 1 5AD572BC
+P 3650 5850
+F 0 "C2" H 3675 5950 50  0000 L CNN
+F 1 "100nF" H 3675 5750 50  0000 L CNN
+F 2 "" H 3688 5700 50  0001 C CNN
+F 3 "" H 3650 5850 50  0001 C CNN
+	1    3650 5850
+	1    0    0    -1  
+$EndComp
+Text GLabel 6550 5600 2    50   Output ~ 0
+Xbee_attn
 Wire Wire Line
 	1950 2800 2400 2800
 Wire Wire Line
@@ -446,15 +459,11 @@ Wire Wire Line
 Wire Wire Line
 	2700 6550 2850 6550
 Wire Wire Line
-	5700 1150 5900 1150
-Wire Wire Line
-	5900 1150 6050 1150
+	5700 1150 6050 1150
 Wire Wire Line
 	6050 950  5900 950 
 Wire Wire Line
-	5900 750  5900 950 
-Wire Wire Line
-	5900 950  5900 1150
+	5900 750  5900 1150
 Wire Wire Line
 	5900 750  7350 750 
 Wire Wire Line
@@ -464,9 +473,7 @@ Wire Wire Line
 Connection ~ 5900 1150
 Connection ~ 5900 950 
 Wire Wire Line
-	5400 1350 5900 1350
-Wire Wire Line
-	5900 1350 6050 1350
+	5400 1350 6050 1350
 Wire Wire Line
 	5900 1350 5900 1550
 Wire Wire Line
@@ -478,13 +485,9 @@ Wire Wire Line
 Wire Wire Line
 	7250 1350 7600 1350
 Wire Wire Line
-	5400 1000 5400 1350
+	5400 1000 5400 1400
 Wire Wire Line
-	5400 1350 5400 1400
-Wire Wire Line
-	5400 1700 5400 1800
-Wire Wire Line
-	5400 1800 5400 2000
+	5400 1700 5400 2000
 Wire Wire Line
 	5400 1800 5700 1800
 Wire Wire Line
@@ -555,19 +558,11 @@ Wire Wire Line
 Wire Wire Line
 	4250 4500 4250 4700
 Wire Wire Line
-	4600 5100 4600 5150
-Wire Wire Line
-	4600 5150 4600 5400
+	4600 5100 4600 5400
 Wire Wire Line
 	4600 5400 4650 5400
 Wire Wire Line
-	3650 6600 4000 6600
-Wire Wire Line
-	4000 6600 4250 6600
-Wire Wire Line
-	4250 6600 4600 6600
-Wire Wire Line
-	4600 6600 4650 6600
+	3650 6600 4650 6600
 Wire Wire Line
 	4600 6600 4600 6700
 Wire Wire Line
@@ -596,20 +591,14 @@ Wire Wire Line
 	4250 6450 4250 6600
 Connection ~ 4600 6600
 Wire Wire Line
-	4250 5550 4250 5700
-Wire Wire Line
-	4250 5700 4250 6050
+	4250 5550 4250 6050
 Wire Wire Line
 	4250 5700 4650 5700
 Connection ~ 4250 5700
 Wire Wire Line
-	4250 5250 4250 5150
+	4250 5150 4250 5250
 Wire Wire Line
-	3650 5150 4000 5150
-Wire Wire Line
-	4000 5150 4250 5150
-Wire Wire Line
-	4250 5150 4600 5150
+	3650 5150 4600 5150
 Connection ~ 4600 5150
 Wire Wire Line
 	4000 5700 4000 5150
@@ -617,21 +606,16 @@ Connection ~ 4250 5150
 Wire Wire Line
 	4000 6000 4000 6600
 Connection ~ 4250 6600
-$Comp
-L C C2
-U 1 1 5AD572BC
-P 3650 5850
-F 0 "C2" H 3675 5950 50  0000 L CNN
-F 1 "100nF" H 3675 5750 50  0000 L CNN
-F 2 "" H 3688 5700 50  0001 C CNN
-F 3 "" H 3650 5850 50  0001 C CNN
-	1    3650 5850
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	3650 5700 3650 5150
 Connection ~ 4000 5150
 Wire Wire Line
 	3650 6000 3650 6600
 Connection ~ 4000 6600
+Wire Wire Line
+	6550 5600 6350 5600
+Text GLabel 2050 4400 0    50   Input ~ 0
+Xbee_attn
+Wire Wire Line
+	2050 4400 2350 4400
 $EndSCHEMATC
